@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario de Contacto</title>
-</head>
-<body>
-    <h1> Formulario de Contacto </h1>
+  </head>
+  <body>
+    <h1>Formulario de Contacto</h1>
 
 <h3>¿En que podemos ayudarte?</h3>
     <form action="">
@@ -15,12 +15,17 @@
 
 <label for = "Contacto"></label>
 
-<label>Nombre/s</label>
-<input type="text" id="nombreUsuario" required>
+<label>Nombre de la criatura</label>
+<input type="text" id="nombreCriatura" required>
 <br><br>
 
 <label>Apellido</label>
 <input type="text" id="ApellidoUsuario" required>
+<br><br>
+
+<label>Sexo</label><br><br>
+<input type="radio" name="Sexo" value="Masculino" > <label>Masculino</label> <br><br>
+<input type="radio" name = "Sexo" value="Femenino" > <label>Femenino</label> 
 <br><br>
 
 <label>Email</label>
@@ -39,6 +44,17 @@
 <label for="dudas" >Motivo de la consulta</label>
 
 <input type="text" placeholder="Ingresar texto"  id="dudas">
+<br></br>
+
+<label>Raza</label>
+<select name="Raza" >
+<option value = "Seleccione una raza" selected >Seleccione una raza</option> 
+<option value = "humano">Humano</option>
+<option value = "orco">Orco</option>
+<option value = "troll">Troll</option>
+<option value = "gnomo">Gnomo</option>
+
+</select>
 
 
 <br><br>
@@ -49,12 +65,27 @@
 
 <input type="submit">
 
+      <label for="Contacto"></label>
 
+      <label>Nombre de la criatura</label>
+      <input type="text" id="nombreCriatura" required />
+      <br /><br />
 
+      <label>Email</label>
+      <input type="email" id="emailUsuario" required />
+      <br /><br />
 
+      <label>Celular</label>
+      <input type="number" id="celularUsuario" />
+      <br /><br />
 
+      <input type="submit" />
     </form>
-
-
-</body>
+  </body>
+  <footer>
+    <p>
+      El mensaje puede ser respondido con 7 días de demora, dependiendo de si se
+      encuentra una lechuza disponible
+    </p>
+  </footer>
 </html>
