@@ -9,52 +9,46 @@
   <body>
     <h1>Formulario de Contacto</h1>
 
-<h3>¿En que podemos ayudarte?</h3>
-    <form action="">
-<br><br>
+    <h3>¿En que podemos ayudarte?</h3>
 
-<label for = "Contacto"></label>
-
-<label>Nombre de la criatura</label>
-<input type="text" id="nombreCriatura" required>
-<br><br>
-
-<label>Sexo</label><br><br>
-<input type="radio" name="Sexo" value="Masculino" > <label>Masculino</label> <br><br>
-<input type="radio" name = "Sexo" value="Femenino" > <label>Femenino</label> 
-<br><br>
-
-<label>Email</label>
-<input type="email" id="emailUsuario" required>
-<br><br>
-
-<label>Celular</label>
-<input type="number" id="celularUsuario">
-<br><br>
-
-<br>
-<label for="dudas" >Motivo de la consulta</label>
-
-<input type="text" placeholder="Ingresar texto"  id="dudas">
-<br></br>
-
-<label>Raza</label>
-<select name="Raza" >
-<option value = "Seleccione una raza" selected >Seleccione una raza</option> 
-<option value = "humano">Humano</option>
-<option value = "orco">Orco</option>
-<option value = "troll">Troll</option>
-<option value = "gnomo">Gnomo</option>
-
-</select>
-
-
-<br><br>
-
-
-<input type="submit">
-
-
+    <form>
+      <div>
+        <label>Nombre de la criatura</label>
+        <input type="text" id="nombreCriatura" required />
+      </div>
+      <div>
+        <label>Sexo</label>
+        <input type="radio" name="Sexo" value="Masculino" />
+        <label>Masculino</label>
+        <input type="radio" name="Sexo" value="Femenino" />
+        <label>Femenino</label>
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" id="emailUsuario" required />
+      </div>
+      <div>
+        <label>Celular</label>
+        <input type="number" id="celularUsuario" />
+      </div>
+      <div>
+        <label for="dudas">Motivo de la consulta</label>
+        <input type="text" placeholder="Ingresar texto" id="dudas" />
+      </div>
+      <div>
+        <label>Raza</label>
+        <select name="Raza">
+          <option value="Seleccione una raza" selected>
+            Seleccione una raza
+          </option>
+          <option value="humano">Humano</option>
+          <option value="orco">Orco</option>
+          <option value="troll">Troll</option>
+          <option value="gnomo">Gnomo</option>
+        </select>
+      </div>
+      <input type="submit" />
+    </form>
   </body>
   <footer>
     <p>
