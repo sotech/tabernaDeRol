@@ -13,30 +13,39 @@
 
     <form>
       <div>
-        <label>Nombre de la criatura</label>
+        <h3>Nombre</h3>
+        <label for="nombreCriatura">Nombre de la criatura</label>
         <input type="text" id="nombreCriatura" required />
       </div>
+
       <div>
-        <label>Sexo</label>
+        <h3>Sexo</h3>
         <input type="radio" name="Sexo" value="Masculino" />
         <label>Masculino</label>
         <input type="radio" name="Sexo" value="Femenino" />
         <label>Femenino</label>
       </div>
+
       <div>
-        <label>Email</label>
+        <h3>Correo electronico</h3>
+        <label for="emailUsuario">Email</label>
         <input type="email" id="emailUsuario" required />
       </div>
+
       <div>
-        <label>Celular</label>
+        <h3>Telefono</h3>
+        <label for="celularUsuario">Celular</label>
         <input type="number" id="celularUsuario" />
       </div>
+
       <div>
+        <h3>Dudas</h3>
         <label for="dudas">Motivo de la consulta</label>
         <input type="text" placeholder="Ingresar texto" id="dudas" />
       </div>
+      
       <div>
-        <label>Raza</label>
+        <h3>Raza</h3>
         <select name="Raza">
           <option value="Seleccione una raza" selected>
             Seleccione una raza
@@ -47,6 +56,7 @@
           <option value="gnomo">Gnomo</option>
         </select>
       </div>
+
       <input type="submit" />
     </form>
   </body>
