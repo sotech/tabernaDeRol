@@ -1,97 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Reserva</title>
-</head>
-<body>
-    <h1>Formulario de Reserva</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina de Reserva</title>
+    </head>
+    <body>
+        <h1>Formulario de Reserva</h1>
+        <form>
+            <h3>Nombre</h3>
+            <label for="nombre"> Ingrese su nombre:</label>
+            <input type="text" placeholder="Nombre del personaje" id="nombre" name="nombre">
 
-    <form>
-    
+            <h3>Raza</h3>
+            <select name="raza">
 
-    <h3>Nombre</h3>
-    <label for="nombre"> Ingrese su nombre:</label>
-    <input type="text" placeholder="Nombre del personaje" id="nombre" name="nombre"><br>
+                <option value="" selected> Seleccione su raza</option>
+                <option value="orco"> Orco</option>
+                <option value="gnomo"> Gnomo</option>
+                <option value="humano"> Humano</option>
+                <option value="troll"> Troll</option>
+                
+            </select>
+            
+            <h3>Género</h3>
+            <label for="genero"> Escoja el suyo<label>
+            <input type="radio" name="genero" value="hombre"><label>Hombre</label>
+            <input type="radio" name="genero" value="mujer"><label>Mujer</label>
 
-    <h3>Raza</h3>
-    <select name="raza">
+            <h3>Habitaciones</h3>
+            <laber for="habitaciones"> Cantidad de Habitaciones que dispondrá:</laber>
+            <input type="number" placeholder="Habitaciones" id="habitaciones" name="habitaciones">
 
-        <option value="" selected> Seleccione su raza</option>
-        <option value="orco"> Orco</option>
-        <option value="gnomo"> Gnomo</option>
-        <option value="humano"> Humano</option>
-        <option value="troll"> Troll</option>
-        
-    </select>
-    
+            <h3>Extremidades</h3>
+            <label for="piernas"> Ingrese el número total de sus piernas:</label>
+            <input type="number" placeholder="Piernas" id="piernas" name="piernas">
 
-    <h3>Género</h3>
-    <label for="genero"> Escoja el suyo:<label>
-    <input type="radio" name="genero" value="hombre">Hombre:
-    <input type="radio" name="genero" value="mujer">Mujer:<br>
+            <h3>Tipo de ser</h3>
+            <laber for="actividad"> ¿Es usted un ser nocturno o diurno?</laber>
+            <input type="radio" name="actividad" value="Nocturno"> <label>Nocturno</label>
+            <input type="radio" name="actividad" value="Diurno"> <label>Diurno</label> 
 
-    <h3>Habitaciones</h3>
-    <laber for="habitaciones"> Cantidad de habitaciones que dispondrá:</laber>
-    <input type="number" placeholder="habitaciones" id="habitaciones" name="habitaciones"><br>
+            
+            <h3>Comida de preferencia</h3>
+            <label for="comida1"> Carne</label>
+            <input type="checkbox" id="comida1" name="comida1" value="Carne">
 
-    <h3>Extremidades</h3>
-    <label for="piernas"> Ingrese el número total de sus piernas:</label>
-    <input type="number" placeholder="piernas" id="piernas" name="piernas"><br>
+            <label for="comida2"> Vegetales</label>
+            <input type="checkbox" id="comida2" name="comida2" value="Vegetales">
 
-    <h3>Tipo de ser</h3>
-    <laber for="actividad"> ¿Es usted un ser nocturno o diurno?:</laber>
-    <input type="radio" name="actividad" value="Nocturno"> Nocturno:
-    <input type="radio" name="actividad" value="Diurno"> Diurno:<br>
+            <label for="comida3"> Elementales</label>
+            <input type="checkbox" id="comida3" name="comida3" value="Elementales">
 
-    
-    <h3>Comida de preferencia</h3>
-    <label for="comida1"> Carne</label>
-    <input type="checkbox" id="comida1" name="comida1" value="Carne"><br>
+            <label for="comida4"> Arcanas</label>
+            <input type="checkbox" id="comida4" name="comida4" value="Arcanas">
 
-    <label for="comida2"> Vegetales</label>
-    <input type="checkbox" id="comida2" name="comida2" value="Vegetales"><br>
+            <h3>Dia de reserva</h3>
+            <label for="dia_reserva"> Ingrese la fecha que desee:</label>
+            <input type="date" id="dia_reserva" name="dia_reserva">
 
-    <label for="comida3"> Elementales</label>
-    <input type="checkbox" id="comida3" name="comida3" value="Elementales"><br>
-
-    <label for="comida4"> Arcanas</label>
-    <input type="checkbox" id="comida4" name="comida4" value="Arcanas"><br>
-
-    <h3>Dia de reserva</h3>
-    <label for="dia_reserva"> Ingrese la fecha que desee:</label>
-    <input type="date" id="dia_reserva" name="dia_reserva"><br>
-    
-
-    <input type="submit" value="Finalizar reserva">
-
-
-    </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
+            <input type="submit" value="Finalizar reserva">
+        </form>
+    </body>
 </html>

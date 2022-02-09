@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario de Contacto</title>
-</head>
-<body>
-    <h1> Formulario de Contacto </h1>
+  </head>
+  <body>
+    <h1>Formulario de Contacto</h1>
 
-<h3>¿En que podemos ayudarte?</h3>
-    <form action="">
-<br><br>
+    <h3>¿En que podemos ayudarte?</h3>
 
-<label for = "Contacto"></label>
+    <form>
+      <div>
+        <h3>Nombre</h3>
+        <label for="nombreCriatura">Nombre de la criatura</label>
+        <input type="text" id="nombreCriatura" required />
+      </div>
 
-<label>Nombre de la criatura</label>
-<input type="text" id="nombreCriatura" required>
-<br><br>
+      <div>
+        <h3>Sexo</h3>
+        <input type="radio" name="Sexo" value="Masculino" />
+        <label>Masculino</label>
+        <input type="radio" name="Sexo" value="Femenino" />
+        <label>Femenino</label>
+      </div>
 
-<label>Apellido</label>
-<input type="text" id="ApellidoUsuario" required>
-<br><br>
+      <div>
+        <h3>Correo electronico</h3>
+        <label for="emailUsuario">Email</label>
+        <input type="email" id="emailUsuario" required />
+      </div>
 
-<label>Email</label>
-<input type="email" id="emailUsuario" required>
-<br><br>
+      <div>
+        <h3>Telefono</h3>
+        <label for="celularUsuario">Celular</label>
+        <input type="number" id="celularUsuario" />
+      </div>
 
-<label>Celular</label>
-<input type="number" id="celularUsuario">
-<br><br>
+      <div>
+        <h3>Dudas</h3>
+        <label for="dudas">Motivo de la consulta</label>
+        <input type="text" placeholder="Ingresar texto" id="dudas" />
+      </div>
+      
+      <div>
+        <h3>Raza</h3>
+        <select name="Raza">
+          <option value="Seleccione una raza" selected>
+            Seleccione una raza
+          </option>
+          <option value="humano">Humano</option>
+          <option value="orco">Orco</option>
+          <option value="troll">Troll</option>
+          <option value="gnomo">Gnomo</option>
+        </select>
+      </div>
 
-<label>Ciudad y Pais</label>
-<input type="text" id="ciudadUsuario">
-<br>
-
-<br>
-<label for="dudas" >Dudas o consultas</label>
-
-<input type="text" id="dudas">
-
-
-<br><br>
-<label>¿Deseas recibir promociones a tu Email?</label><br><br>
-<input type="radio" name="recibePromociones" value="Si"> <label>SI</label> <br><br>
-<input type="radio" name="recibePromociones" value="No"> <label>NO</label> <br><br>
-
-
-<input type="submit">
-
-
-
-
-
+      <input type="submit" />
     </form>
-
-
-</body>
+  </body>
+  <footer>
+    <p>
+      El mensaje puede ser respondido con 7 días de demora, dependiendo de si se
+      encuentra una lechuza disponible
+    </p>
+  </footer>
 </html>
