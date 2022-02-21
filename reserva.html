@@ -24,20 +24,29 @@
         </header>
         <h1 class= "text-center" >Formulario de Reserva</h1>
         <form>
+            <div class="mb-3">
             <h3>Nombre</h3>
-            <label for="nombre"> Ingrese su nombre:</label>
-            <input type="text" placeholder="Nombre del personaje" id="nombre" name="nombre">
+            <label for="nombre" class="form-label"> Ingrese su nombre:</label>
+            <input type="text" placeholder="Nombre del personaje" id="nombre" name="nombre" class="form-control mb-2 w-25">
+            </div>
 
             <h3>Raza</h3>
-            <select name="raza">
+            
+            <div class="mb-3">
+            <select name="raza" class="form-control mb-2 w-25">
+                
 
                 <option value="" selected> Seleccione su raza</option>
                 <option value="orco"> Orco</option>
                 <option value="gnomo"> Gnomo</option>
                 <option value="humano"> Humano</option>
                 <option value="troll"> Troll</option>
+            
                 
             </select>
+            </div>
+
+            
             
             <h3>Género</h3>
             <label for="genero"> Escoja el suyo<label>
@@ -45,17 +54,19 @@
             <input type="radio" name="genero" value="mujer"><label>Mujer</label>
 
             <h3>Habitaciones</h3>
-            <laber for="habitaciones"> Cantidad de Habitaciones que dispondrá:</laber>
-            <input type="number" placeholder="Habitaciones" id="habitaciones" name="habitaciones">
+            <label for="habitaciones" class="form-label"> Cantidad de Habitaciones que dispondrá:</label>
+            <input type="number" placeholder="Habitaciones" id="habitaciones" name="habitaciones" class="form-control">
 
             <h3>Extremidades</h3>
-            <label for="piernas"> Ingrese el número total de sus piernas:</label>
-            <input type="number" placeholder="Piernas" id="piernas" name="piernas">
+            <label for="piernas" class="form-label"> Ingrese el número total de sus piernas:</label>
+            <input type="number" placeholder="Piernas" id="piernas" name="piernas" class="form-control">
 
             <h3>Tipo de ser</h3>
             <laber for="actividad"> ¿Es usted un ser nocturno o diurno?</laber>
             <input type="radio" name="actividad" value="Nocturno"> <label>Nocturno</label>
             <input type="radio" name="actividad" value="Diurno"> <label>Diurno</label> 
+
+            
 
             
             <h3>Comida de preferencia</h3>
@@ -72,17 +83,17 @@
             <input type="checkbox" id="comida4" name="comida4" value="Arcanas">
 
             <h3>Dia de reserva</h3>
-            <label for="dia_reserva"> Ingrese la fecha que desee:</label>
-            <input type="date" id="dia_reserva" name="dia_reserva">
+            <label for="dia_reserva" class="form-label"> Ingrese la fecha que desee:</label>
+            <input type="date" id="dia_reserva" name="dia_reserva" class="form-control">
+        
 
             <input type="submit" value="Finalizar reserva">
+        
         </form>
-    </body>}
-    <footer>
-        <div class="text-center fw-light" >
-            <p>
-                Las reservas tienen una chance de 1d20 + 4 de concretarse. Caso contrario, dormir en la calle es una buena opcion
-            </p>
-        </div>
-    </footer>
+    </body>
+    <footer class="text-center fst-italic">
+        <p>
+            Las reservas tienen una chance de 1d20 + 4 de concretarse. Caso contrario, dormir en la calle es una buena opcion
+        </p>
+      </footer>
 </html>
