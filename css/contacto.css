@@ -3,7 +3,20 @@ h1 {
 }
 
 
-   
-    
+body{ background-color: lightblue;}
 
+.cuerpo {
+    margin:   5% 20%;
+    padding: 5%;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center; 
+    align-items: center;
+    
+    border-radius:  50px;
+    border:  solid ; color: rgb(10, 10, 10);
+
+    background-color: white;
 }
+  
