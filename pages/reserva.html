@@ -23,9 +23,11 @@
     <div class="cuerpo cuerpoPrincipal">
       <h1 class="text-center">Formulario de Reserva</h1>
       <header>
-        <div class="text-center" >
-          <img class="img-fluid" width="60%"
-            src="Portada.png"
+        <div class="text-center">
+          <img
+            class="img-fluid"
+            width="60%"
+            src="../img/portada.png"
             alt="Conejo masticando conejos"
             title="Atrevete a hacer click... dale"
           />
@@ -37,7 +39,7 @@
         </nav>
       </header>
       <form>
-        <div class="mb-3"> <hr>
+        <div class="mb-3">
           <h3>Nombre</h3>
           <label for="nombre" class="form-label"> Ingrese su nombre:</label>
           <input
@@ -48,31 +50,34 @@
             class="form-control mb-2 w-25"
           />
         </div>
-
-        <div class="mb-3"> <hr>
+        <hr />
+        <div class="mb-3">
           <h3>Raza</h3>
-          
-            <select name="raza" class="form-control mb-2 w-25">
-              <option value="" selected>Seleccione su raza</option>
-              <option value="orco">Orco</option>
-              <option value="gnomo">Gnomo</option>
-              <option value="humano">Humano</option>
-              <option value="troll">Troll</option>
-            </select>
-          </div>
-        
-        <div> <hr>
+
+          <select name="raza" class="form-control mb-2 w-25">
+            <option value="" selected>Seleccione su raza</option>
+            <option value="orco">Orco</option>
+            <option value="gnomo">Gnomo</option>
+            <option value="humano">Humano</option>
+            <option value="troll">Troll</option>
+          </select>
+        </div>
+        <hr />
+        <div>
           <h3>Género</h3>
           <label for="genero"> Escoja el suyo</label>
           <input type="radio" name="genero" value="hombre" /><label
-            >Hombre</label>
+            >Hombre</label
+          >
           <input type="radio" name="genero" value="mujer" /><label>Mujer</label>
         </div>
 
-        <div> <hr>
+        <hr />
+        <div>
           <h3>Habitaciones</h3>
           <label for="habitaciones" class="form-label">
-            Cantidad de Habitaciones que dispondrá:</label>
+            Cantidad de Habitaciones que dispondrá:</label
+          >
           <input
             type="number"
             placeholder="Habitaciones"
@@ -82,10 +87,12 @@
           />
         </div>
 
-        <div> <hr>
+        <hr />
+        <div>
           <h3>Extremidades</h3>
           <label for="piernas" class="form-label">
-            Ingrese el número total de sus piernas:</label>
+            Ingrese el número total de sus piernas:</label
+          >
           <input
             type="number"
             placeholder="Piernas"
@@ -94,8 +101,9 @@
             class="form-control barraLarga"
           />
         </div>
-        
-        <div> <hr>
+
+        <hr />
+        <div>
           <h3>Tipo de ser</h3>
           <label for="actividad"> ¿Es usted un ser nocturno o diurno?</label>
           <input type="radio" name="actividad" value="Nocturno" />
@@ -103,14 +111,15 @@
           <input type="radio" name="actividad" value="Diurno" />
           <label>Diurno</label>
         </div>
-       
-        <div>  <hr>   
+
+        <hr />
+        <div>
           <h3>Comida de preferencia</h3>
           <label for="comida1"> Carne</label>
           <input type="checkbox" id="comida1" name="comida1" value="Carne" />
         </div>
 
-        <div> <hr>
+        <div>
           <label for="comida2"> Vegetales</label>
           <input
             type="checkbox"
@@ -119,7 +128,7 @@
             value="Vegetales"
           />
         </div>
-        <div> <hr>
+        <div>
           <label for="comida3"> Elementales</label>
           <input
             type="checkbox"
@@ -129,15 +138,17 @@
           />
         </div>
 
-        <div> <hr>
+        <div>
           <label for="comida4"> Arcanas</label>
           <input type="checkbox" id="comida4" name="comida4" value="Arcanas" />
         </div>
 
-        <div> <hr>
+        <hr />
+        <div>
           <h3>Dia de reserva</h3>
           <label for="dia_reserva" class="form-label">
-            Ingrese la fecha que desee:</label>
+            Ingrese la fecha que desee:</label
+          >
           <input
             type="date"
             id="dia_reserva"
@@ -145,8 +156,12 @@
             class="form-control barraLarga"
           />
         </div>
-
-        <input type="submit" value="Finalizar reserva" class="boton btn btn-primary btn-lg btn-block"/>
+        <hr />
+        <input
+          type="submit"
+          value="Finalizar reserva"
+          class="btn btn-primary btn-lg btn-block"
+        />
       </form>
       <footer class="text-center fst-italic">
         <p>
